@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const getWeather = async (city) => {
+const getWeather = async (city: string) => {
 
     const apiKey = "f825344b0cf0672c689378549f9868db";
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
