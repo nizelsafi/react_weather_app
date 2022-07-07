@@ -1,6 +1,6 @@
 import { useState } from "react";
-import getWeather from "./getWeather";
-import WeatherInfos from "./components/WeatherInfos";
+import getWeather from "../script/getWeather";
+import WeatherInfos from "./WeatherInfos";
 
 function WeatherCity() {
     const [city, setCity] = useState("");

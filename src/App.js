@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import WeatherCity from './WeatherCity';
+import WeatherCity from './components/WeatherCity';
 
 function App() {
   return (
