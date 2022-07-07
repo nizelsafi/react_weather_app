@@ -5,6 +5,8 @@ import WeatherInfos from "./components/WeatherInfos";
 function WeatherCity() {
     const [city, setCity] = useState("");
     const [weatherInfos, setWeatherInfos] = useState(null);
+    const [loading, setIsLoading] = useState(null);
+
     const onChangeHandler = event => {
         setCity(event.target.value);
     };
