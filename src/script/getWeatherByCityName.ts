@@ -1,9 +1,10 @@
 import axios from "axios";
 
-const getWeather = async (city: string) => {
+const getWeatherByCityName = async (city: string) => {
 
     const apiKey = "f825344b0cf0672c689378549f9868db";
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+    const params = `q=${city}&appid=${apiKey}`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?`+ params;
     let weatherInfos;
 
     try {
@@ -17,4 +18,4 @@ const getWeather = async (city: string) => {
     return weatherInfos;
 }
 
-export default getWeather;
+export default getWeatherByCityName;
